@@ -1,0 +1,3 @@
+{
+    "MongoConnectionString":"mongodb://WRITE_MONGO_CON_STR_TO_HERE"
+}

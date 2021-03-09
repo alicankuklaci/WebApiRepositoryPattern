@@ -5,18 +5,16 @@ import * as bodyParser from 'body-parser';
 import { Container } from 'inversify';
 import { interfaces, InversifyExpressServer } from 'inversify-express-utils';
 
-// declare metadata by @controller annotation
+
 
 import mongoose from 'mongoose';
 
 
-//import { CatService } from './repositories/services/CatService';
-// declare metadata by @controller annotation
-//import "./repositories/controller/foo.controller";
 
 import "./repositories/controller/index";
 import * as services from "./repositories/services/index";
 
+import AppSettings=require('./setting.json');
 
 const MONGO_OPTIONS = {
     useUnifiedTopology: true,
@@ -42,7 +40,7 @@ container.options.skipBaseClassChecks=true;
 
 
 await  mongoose
-.connect("mongodb://xapp_warriors:254226Aq%2a%2a@mongo-worker1.mobilex360.io:27017,mongo-worker2.mobilex360.io:27017,mongo-worker3.mobilex360.io:27017/warriors?authSource=admin&replicaSet=power-rs&readPreference=primary&appname=XAPP_ERP&ssl=true", MONGO_OPTIONS);
+.connect(AppSettings.MongoConnectionString, MONGO_OPTIONS);
 
 
 // create server

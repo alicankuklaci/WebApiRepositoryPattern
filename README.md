@@ -93,4 +93,5 @@ export class CatController implements interfaces.Controller {
   
 ```
 
-
+## NOTE!
+Don't forget to change mongo connection string from settings.json

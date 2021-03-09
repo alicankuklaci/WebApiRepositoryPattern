@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "pre-build":"node prebuild.js",
-    "test": "npm run pre-build && tsc && node out/index.js"
+    "test": "npm run pre-build && tsc && node out/index.js",
+    "build":"tsc"
   },
   "keywords": [],
   "author": "",
