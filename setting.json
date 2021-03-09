@@ -1,4 +1,4 @@
 {
+   "MongoConnectionString":"mongodb://WRITE_MONGO_CON_STR_TO_HERE"
 
-    "MongoConnectionString":"mongodb://xapp_warriors:254226Aq%2a%2a@mongo-worker1.mobilex360.io:27017,mongo-worker2.mobilex360.io:27017,mongo-worker3.mobilex360.io:27017/warriors?authSource=admin&replicaSet=power-rs&readPreference=primary&appname=XAPP_ERP&ssl=true"
-}
+  }
