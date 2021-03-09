@@ -1,4 +1,6 @@
 # WebApiRepositoryPattern
+[![Build Status](https://travis-ci.com/alicankuklaci/WebApiRepositoryPattern.svg?branch=main)](https://travis-ci.com/alicankuklaci/WebApiRepositoryPattern)
+
 Repository pattern &amp; Express Web api all together with SOLID standard.
 
 if you want to add a service, you can follow these three steps.
