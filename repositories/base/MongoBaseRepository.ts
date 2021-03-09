@@ -26,10 +26,11 @@ export abstract class MongoBaseRepository<T, U extends types.AnyParamConstructor
 
     }
   }
-  public async create(data: mongoose.CreateQuery<types.DocumentType<InstanceType<U>>>): Promise<T> {
+  //mongoose.CreateQuery<types.DocumentType<InstanceType<U>>>
+  public async create(data: T): Promise<T> {
 
     try {
-      let create = await this.dataModel.create(data);
+      let create = await this.dataModel.create(data as any);
       return plainToClass(this.T_CLASS, create);
     } catch (error) {
       throw new Error(error);

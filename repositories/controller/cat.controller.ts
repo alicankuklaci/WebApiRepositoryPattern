@@ -12,7 +12,7 @@ export class CatController implements interfaces.Controller {
 
     @httpGet("/")
     private async index(req: express.Request, res: express.Response, next: express.NextFunction): Promise<Cat> {
-       
+     
         return await this.fooService.findByID('604670d96f92fe8559a196e5')
     }
 

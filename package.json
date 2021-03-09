@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pre-build":"node prebuild.js",
+    "pre-build": "node prebuild.js",
     "test": "npm run pre-build && tsc && node out/index.js",
-    "build":"tsc"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,6 @@
   "dependencies": {
     "@typegoose/typegoose": "^7.5.0",
     "@types/mongodb": "^3.6.9",
-    "@types/mongoose": "^5.10.3",
     "class-transformer": "^0.4.0",
     "es6-shim": "^0.35.6",
     "inversify": "^5.0.5",
@@ -26,6 +25,7 @@
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.0",
-    "@types/express": "^4.17.11"
+    "@types/express": "^4.17.11",
+    "@types/mongoose": "^5.10.3"
   }
 }
